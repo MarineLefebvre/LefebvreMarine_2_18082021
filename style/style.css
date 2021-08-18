@@ -21,10 +21,34 @@ body{
 }
 
 a:hover {
-    border-top: 1px solid black !important;
+    border-top: 1px solid #0065FC ;
 }
 
 a {
+    padding-top: 1em;
     text-decoration: none;
-    color: black;
+    color:#0065FC;
+    margin-right: 2em;
+
+}
+
+p {
+font-size: 90%;
+}
+
+#bouton {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#research {
+    border : 1px solid lightgray;
+    border-radius: 10px 10px 10px 10px;
+    width: max-content;
+    display: flex;
+}
+
+#position {
+    background-color: #F2F2F2;
 }
