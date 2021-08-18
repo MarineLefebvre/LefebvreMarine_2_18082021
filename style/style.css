@@ -40,6 +40,7 @@ font-size: 90%;
     background-color: #0065FC;
     color: white;
     border-radius: 0px 10px 10px 0px;
+    border: 0;
 }
 
 #research {
@@ -47,8 +48,38 @@ font-size: 90%;
     border-radius: 10px 10px 10px 10px;
     width: max-content;
     display: flex;
+    height: 2em;
 }
 
-#position {
-    background-color: #F2F2F2;
+.filtres{
+    display: inline-flex;
+    border : 1px solid lightgray;
+    border-radius: 20px 20px 20px 20px;
+    width: max-content;
+    height: 2em;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.icon {
+    background-color: grey;
+    border-radius: 20px 20px 20px 20px;
+}
+
+input {
+    border: 0;
+}
+
+.label {
+    font-weight: bold;
+    margin: auto;
+}
+
+#labelFiltres{
+    display: inline-flex;
+    padding: auto;
+}
+
+#labelFiltres:hover{
+    background-color: lightgray;
 }
