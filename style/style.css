@@ -1,0 +1,30 @@
+body{
+    font-family: raleway;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url('../src/Raleway-Regular.ttf');
+}
+
+#navbar ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.navItem {
+    display: inline-block;
+}
+
+#listItems {
+    float: right;
+}
+
+a:hover {
+    border-top: 1px solid black !important;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
