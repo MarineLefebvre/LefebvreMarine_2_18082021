@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://kit.fontawesome.com/73e562196f.js" crossorigin="anonymous"></script>
 	<meta charset="utf-8">
 	<title>Reservia</title>
     <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
@@ -14,34 +15,52 @@
             <li class="navItem"><a href="#">S'inscrire</a></li>    
         </ul>
     </nav>
-    <h3>Trouvez votre hébergement pour des vacances de rêves</h3>
-    <p>en plein centre ville ou en pleine nature</p>
-
+    <div id="titre">
+        <h3>Trouvez votre hébergement pour des vacances de rêves</h3>
+        <p>en plein centre ville ou en pleine nature</p> 
+    </div>
+  
     <div id="research">
-        <img class="icon" src="src/icon/pin.png">
+        <div class="containIcon">
+            <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+        </div>
         <input type="text" placeholder="Saisir une ville"></input>
         <input id="bouton" type="button" value="Rechercher">
     </div>
 
-    <div>
+    <div id="blockFiltre"> 
         <p id="labelFiltres">Filtres</p>
         <div class="filtres">
-            <img class="icon" src="src/icon/billet.png">
+            <div class="containIcon">
+                <i class="fa fa-money icon" aria-hidden="true"></i>
+            </div>
             <p class="label">Economique</p>
         </div>
         <div class="filtres">
-            <img class="icon" src="src/icon/man.png">
+            <div class="containIcon">
+                <i class="fa fa-child icon" aria-hidden="true"></i>
+            </div>
             <p class="label">Familial</p>
         </div>
         <div class="filtres">
-            <img class="icon" src="src/icon/coeur.png">
+            <div class="containIcon">
+                <i class="fa fa-heart icon" aria-hidden="true"></i>
+            </div>
             <p class="label">Romantique</p>
         </div>
         <div class="filtres">
-            <img class="icon" src="src/icon/chien.png">
+            <div class="containIcon">
+                <i class="fa fa-dog icon" aria-hidden="true"></i>
+            </div>
             <p class="label">Animaux autorisés</p>
         </div>
     </div>
 
+   <div id="info">
+    <div class="containIconInfo">
+        <i class="fa fa-info iconInfo" aria-hidden="true"></i>
+    </div>
+        <p class="label"> Plus de 500 logements sont disponible dans cette ville </p> 
+    </div>
 </body>
 </html>

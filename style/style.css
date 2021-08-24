@@ -45,10 +45,9 @@ font-size: 90%;
 
 #research {
     border : 1px solid lightgray;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 20px 15px 15px 20px;
     width: max-content;
     display: flex;
-    height: 2em;
 }
 
 .filtres{
@@ -56,14 +55,30 @@ font-size: 90%;
     border : 1px solid lightgray;
     border-radius: 20px 20px 20px 20px;
     width: max-content;
-    height: 2em;
     margin-top: 2em;
-    margin-left: 2em;
+    margin-left: 3em;
+    height: 2em;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
 }
 
-.icon {
-    background-color: grey;
+.filtres:hover{
+    background-color: lightgray; 
+}
+
+.icon, .iconInfo {
+    color: #0065FC;
+    font-size: 1em;
+}
+
+.containIcon, .containIconInfo {
+    width: 2em;
+    height: 2em;
+    background-color: lightgray;
     border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
 }
 
 input {
@@ -72,14 +87,25 @@ input {
 
 .label {
     font-weight: bold;
-    margin: auto;
+}
+
+#blockFiltre{
+    position: relative;
 }
 
 #labelFiltres{
     display: inline-flex;
-    padding: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-#labelFiltres:hover{
-    background-color: lightgray;
+#info {
+    display: inline-flex;
+    width: max-content;
+    height: 2em;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
 }
+
+
