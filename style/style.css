@@ -106,6 +106,37 @@ input {
     height: 2em;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
+    margin-top: 1em; 
 }
 
+h1 {
+    font-size: 1.2em;
+    margin-left: 1em;
+}
 
+.disbaled{
+    color: grey !important;
+}
+
+.cardHebergement{
+    display: list-item;
+    border: lightgray solid 1px;
+    width: max-content;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.imageHebergement {
+    border-radius: 20px 20px 0px 0px;
+    width: 13em;
+}
+
+h2{
+    font-size: 1em;
+}
+
+.cardHebergement > p, h2, .score {
+    width: max-content;
+    margin-left: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
