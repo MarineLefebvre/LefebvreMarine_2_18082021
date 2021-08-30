@@ -157,3 +157,15 @@ h2{
     border-radius: 20px 20px 20px 20px;
 }
 
+.imagePopulaire {
+    width: 13em;
+    height: 8.5;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.descBestSeller{
+    background-color: blue;
+}
+
+
