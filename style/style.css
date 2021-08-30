@@ -119,15 +119,18 @@ h1 {
 }
 
 .cardHebergement{
-    display: list-item;
-    border: lightgray solid 1px;
+    border:white solid 1px;
     width: max-content;
     border-radius: 20px 20px 20px 20px;
+    margin-right: 2%;
+    margin-bottom: 1.5%;
+    margin-left: 1%;
 }
 
 .imageHebergement {
     border-radius: 20px 20px 0px 0px;
     width: 13em;
+    height: 8.5em;
 }
 
 h2{
@@ -140,3 +143,16 @@ h2{
     margin-top: 0;
     margin-bottom: 0.3em;
 }
+
+.conteneur {
+    display: flex;
+}
+
+#herbegementGlobal {
+    width: max-content;
+    padding: 1em;
+    background-color:#F2F2F2;
+    margin-top: 1em;
+    border-radius: 20px 20px 20px 20px;
+}
+
