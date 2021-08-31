@@ -71,6 +71,15 @@ font-size: 90%;
     font-size: 1em;
 }
 
+#pin, #graph {
+    color: black;
+}
+
+#graph {
+    
+    margin-left: 8em;
+}
+
 .containIcon, .containIconInfo {
     width: 2em;
     height: 2em;
@@ -112,6 +121,7 @@ input {
 h1 {
     font-size: 1.2em;
     margin-left: 1em;
+    margin-bottom: 1.5em;
 }
 
 .disbaled{
@@ -119,12 +129,13 @@ h1 {
 }
 
 .cardHebergement{
-    border:white solid 1px;
+    border:white solid 2px;
     width: max-content;
     border-radius: 20px 20px 20px 20px;
     margin-right: 2%;
-    margin-bottom: 1.5%;
+    margin-bottom: 2em;
     margin-left: 1%;
+    background-color: white;
 }
 
 .imageHebergement {
@@ -145,7 +156,20 @@ h2{
     margin-bottom: 0.3em;
 }
 
-.conteneur {
+.descBestSeller > p, h2 {
+    width: max-content;
+    margin-left: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
+
+.descBestSeller > h2 {
+    width: 10em;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.conteneur, .populaires {
     display: flex;
 }
 
@@ -158,14 +182,31 @@ h2{
 }
 
 .imagePopulaire {
-    width: 13em;
-    height: 8.5;
+    width: 8em;
+    height: 9em;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
+    
 }
+
 
 .descBestSeller{
-    background-color: blue;
+    width: max-content;
 }
 
+.populaires{
+    border-radius: 20px 20px 20px 20px;
+    border: white solid 2px;
+    margin-bottom: 2em;
+    background-color: white;
+    width: 20em;
+    align-items: center;
+}
+
+.conteneur2 {
+    background-color:#F2F2F2;
+    border-radius: 20px 20px 20px 20px ;
+    margin-left: 3em;
+    padding: 2em;
+}
 
