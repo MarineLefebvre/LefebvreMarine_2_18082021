@@ -210,3 +210,43 @@ h2{
     padding: 2em;
 }
 
+#activites{
+    display: flex;
+    margin-top: 2em;
+}
+
+.photoTall {
+    width: 13em;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activitesTall, .activitesSmall {
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 2em;
+    background-color: white;
+    width: max-content;
+    box-shadow: 6px 6px 5px #F2F2F2;
+}
+
+.photoSmall {
+    width: 13em;
+    height: 6em;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#firstActivite{
+    margin-bottom: 1.5em !important;
+}
+
+.activitesTall{
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+#activitesMarseille {
+    margin-top: 2em;
+    margin-left: 4em;
+}
