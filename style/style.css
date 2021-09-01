@@ -250,3 +250,13 @@ h2{
     margin-top: 2em;
     margin-left: 4em;
 }
+
+.footer{
+    background-color:lightgray;
+    display: flex;
+}
+
+.divfooter{
+    margin-right: 10em;
+    margin-left: 5em;
+}
