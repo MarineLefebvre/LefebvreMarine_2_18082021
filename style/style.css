@@ -1,5 +1,6 @@
 body{
     font-family: raleway;
+    font-size: 1.4em;
 }
 
 @font-face {
@@ -40,8 +41,10 @@ font-size: 90%;
     background-color: #0065FC;
     color: white;
     border-radius: 0px 10px 10px 0px;
-    border: 0;
+    
 }
+
+
 
 #research {
     border : 1px solid lightgray;
@@ -136,6 +139,7 @@ h1 {
     margin-bottom: 2em;
     margin-left: 1%;
     background-color: white;
+    box-shadow: 6px 6px 5px lightgray;
 }
 
 .imageHebergement {
@@ -174,7 +178,7 @@ h2{
 }
 
 #herbegementGlobal {
-    width: 700px;
+    width: 970px;
     padding: 1em;
     background-color:#F2F2F2;
     margin-top: 1em;
@@ -201,6 +205,7 @@ h2{
     background-color: white;
     width: 20em;
     align-items: center;
+    box-shadow: 6px 6px 5px lightgray;
 }
 
 .conteneur2 {
@@ -254,6 +259,7 @@ h2{
 .footer{
     background-color:lightgray;
     display: flex;
+    
 }
 
 .divfooter{
