@@ -1,6 +1,6 @@
 body{
     font-family: raleway;
-    font-size: 1.4em;
+    font-size: 0.8em;
 }
 
 @font-face {
@@ -17,8 +17,15 @@ body{
     display: inline-block;
 }
 
+#heber, #act {
+    align-self: flex-end;
+}
+
 #listItems {
-    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 a:hover {
@@ -30,6 +37,7 @@ a {
     text-decoration: none;
     color:#0065FC;
     margin-right: 2em;
+
 }
 
 p {
@@ -40,7 +48,10 @@ font-size: 90%;
     background-color: #0065FC;
     color: white;
     border-radius: 0px 10px 10px 0px;
+    
 }
+
+
 
 #research {
     border : 1px solid lightgray;
@@ -54,11 +65,12 @@ font-size: 90%;
     border : 1px solid lightgray;
     border-radius: 20px 20px 20px 20px;
     width: max-content;
-    margin-top: 2em;
+    margin-top: 0em;
     margin-left: 3em;
     height: 2em;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
+
 }
 
 .filtres:hover{
@@ -76,7 +88,7 @@ font-size: 90%;
 
 #graph {
     
-    margin-left: 8em;
+    margin-left: 4em;
 }
 
 .containIcon, .containIconInfo {
@@ -99,13 +111,13 @@ input {
 
 #blockFiltre{
     position: relative;
+    flex-direction: column;
+    
 }
 
 #labelFiltres{
-    display: inline-flex;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+   position: relative !important;
+   display: block;
 }
 
 #info {
@@ -115,6 +127,7 @@ input {
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
     margin-top: 1em; 
+   
 }
 
 h1 {
@@ -140,7 +153,7 @@ h1 {
 
 .imageHebergement {
     border-radius: 20px 20px 0px 0px;
-    width: 13em;
+    width: 23em;
     height: 8.5em;
     object-fit: cover;
 }
@@ -169,12 +182,20 @@ h2{
     white-space: normal;
 }
 
-.conteneur, .populaires, .conteneurList {
+#blocHebergement{
+    flex-direction: column-reverse;
+}
+
+.conteneur {
     display: flex;
 }
 
+.conteneurList {
+    flex-direction: column;
+}
+
 #herbegementGlobal {
-    width: 970px;
+    width: 320px;
     padding: 1em;
     background-color:#F2F2F2;
     margin-top: 1em;
@@ -189,7 +210,6 @@ h2{
     
 }
 
-
 .descBestSeller{
     width: max-content;
 }
@@ -199,62 +219,59 @@ h2{
     border: white solid 2px;
     margin-bottom: 2em;
     background-color: white;
-    width: 20em;
+    width: 23em;
     align-items: center;
     box-shadow: 6px 6px 5px lightgray;
+    display: flex;
 }
 
 .conteneur2 {
     background-color:#F2F2F2;
     border-radius: 20px 20px 20px 20px ;
-    margin-left: 3em;
-    padding: 2em;
+    width: max-content;
+    margin-left: 0em !important;
+
 }
 
 #activites{
-    display: flex;
+    flex-direction: column;
     margin-top: 2em;
-}
-
-.photoTall {
-    width: 13em;
-    height: 15em;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
 }
 
 .activitesTall, .activitesSmall {
     border-radius: 20px 20px 20px 20px;
-    margin-bottom: 2em;
     background-color: white;
     width: max-content;
     box-shadow: 6px 6px 5px #F2F2F2;
 }
 
-.photoSmall {
-    width: 13em;
-    height: 6em;
+.photoSmall, .photoTall {
+    width: 23em;
+    height: 8.5em;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
+
 }
 
 #firstActivite{
     margin-bottom: 1.5em !important;
 }
 
-.activitesTall{
-    margin-right: 3em;
-    margin-left: 3em;
+.activitesTall, .activitesSmall{
+  margin-left: 2.5em !important;
+  
 }
 
 #activitesMarseille {
     margin-top: 2em;
     margin-left: 4em;
+
 }
 
 .footer{
     background-color:lightgray;
     display: flex;
+    flex-direction: column;
     
 }
 

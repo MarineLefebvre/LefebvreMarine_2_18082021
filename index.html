@@ -2,17 +2,19 @@
 <html>
 <head>
     <script src="https://kit.fontawesome.com/73e562196f.js" crossorigin="anonymous"></script>
-	<meta charset="utf-8">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Reservia</title>
-    <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" /> <!-- Pour tout le monde -->
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="style/petiteResolution.css" /><!-- Pour une résolution de 640px max -->
 </head>
+
 <body>
     <nav id="navbar">
         <img src="src/images/logo/Reservia.svg">
         <ul id="listItems">
-            <li class="navItem"><a href="#">Hébérgements</a></li>
-            <li class="navItem"><a href="#">Activités</a></li>
-            <li class="navItem"><a href="#">S'inscrire</a></li>    
+            <li class="navItem" id="heber"><a href="#">Hébérgements</a></li>
+            <li class="navItem" id="act"><a href="#">Activités</a></li>
+            <li class="navItem" id="inscription" ><a href="#">S'inscrire</a></li>    
         </ul>
     </nav>
     <div id="titre">
@@ -63,10 +65,10 @@
         <p class="label"> Plus de 500 logements sont disponible dans cette ville </p> 
     </div>
 
-    <div class="conteneur">
+    <div class="conteneur" id="blocHebergement">
         <div id="herbegementGlobal">  
             <h1>Hébergements à Marseille</h1> 
-            <div class="conteneur">
+            <div class="conteneurList">
                 <div class="cardHebergement">
                     <img class="imageHebergement" src="src/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"> 
                     <h2>Auberge la Cannebière</h2>
@@ -107,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="conteneur">
+            <div class="conteneurList">
                 <div class="cardHebergement">
                     <img class="imageHebergement" src="src/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"> 
                     <h2>Hotel de la mer</h2>
@@ -152,10 +154,10 @@
         </div>
 
         <div class="conteneur2">
-        <div class="conteneur"> 
-            <h1>Les plus populaires</h1>
-            <p><i class="fa fa-chart-line icon" id="graph"></i></p> 
-        </div>
+            <div class="conteneur"> 
+                <h1>Les plus populaires</h1>
+                <p><i class="fa fa-chart-line icon" id="graph"></i></p> 
+            </div>
             <div class="populaires"> 
                 <img class="imagePopulaire" src="src/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"> 
                 <div class="descBestSeller">
@@ -224,7 +226,7 @@
         </div>
         <div class="activitesTall">
             <img class="photoTall" src="src/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" >
-            <h2>Prc national des calanques</h2>
+            <h2>Parc national des calanques</h2>
         </div>
         <div>
             <div class="activitesSmall">
