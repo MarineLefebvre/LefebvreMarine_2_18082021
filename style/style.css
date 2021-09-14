@@ -56,7 +56,7 @@ font-size: 90%;
     width: max-content;
     margin-top: 2em;
     margin-left: 3em;
-    height: 2em;
+    height: 1.7em;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
 }
@@ -79,11 +79,22 @@ font-size: 90%;
     margin-left: 8em;
 }
 
-.containIcon, .containIconInfo {
-    width: 2em;
-    height: 2em;
-    background-color: lightgray;
-    border-radius: 20px 20px 20px 20px;
+.containIcon {
+    width: 1.7em;
+    height: 1.7em;
+    background-color: #C5E4FF ;
+    border-radius: 17px 17px 17px 17px;
+    display: flex;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+}
+
+.containresearch{
+
+    width: 1.7em;
+    height: 1.7em;
+    background-color:  #F2F2F2;
+    border-radius: 17px 5px 5px 17px;
     display: flex;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
@@ -95,10 +106,13 @@ input {
 
 .label {
     font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 #blockFiltre{
     position: relative;
+    
 }
 
 #labelFiltres{
@@ -108,10 +122,21 @@ input {
     transform: translateY(-50%);
 }
 
+.containIconInfo {
+    width: 1em;
+    height: 1em;
+    background-color: transparent ;
+    border-radius: 17px 17px 17px 17px; 
+    display: flex;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+}
+
+
 #info {
     display: inline-flex;
     width: max-content;
-    height: 2em;
+    height: 0.1em;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
     margin-top: 1em; 
@@ -120,7 +145,7 @@ input {
 h1 {
     font-size: 1.2em;
     margin-left: 1em;
-    margin-bottom: 1.5em;
+    
 }
 
 .disbaled{
@@ -158,13 +183,12 @@ h2{
 
 .descBestSeller > p, h2 {
     width: max-content;
-    margin-left: 0.5em;
-    margin-top: 0;
-    margin-bottom: 0.3em;
+    margin-left: 0.8em;
+    margin-bottom: 0.2em;
 }
 
 .descBestSeller > h2 {
-    width: 10em;
+    width: 5em;
     word-wrap: break-word;
     white-space: normal;
 }
@@ -206,9 +230,11 @@ h2{
 
 .conteneur2 {
     background-color:#F2F2F2;
-    border-radius: 20px 20px 20px 20px ;
-    margin-left: 3em;
-    padding: 2em;
+    border-radius: 19px 19px 19px 19px ;
+    margin-left: 5em;
+    padding: 1em;
+    margin-top: 0.7em;
+    
 }
 
 #activites{
@@ -229,7 +255,10 @@ h2{
     background-color: white;
     width: max-content;
     box-shadow: 6px 6px 5px #F2F2F2;
+    padding-top: 0.5em;
+    
 }
+
 
 .photoSmall {
     width: 13em;
@@ -250,12 +279,13 @@ h2{
 #activitesMarseille {
     margin-top: 2em;
     margin-left: 4em;
+    border-radius: 
 }
 
 .footer{
     background-color:lightgray;
     display: flex;
-    
+    border-radius: 
 }
 
 .divfooter{
