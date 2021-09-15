@@ -31,11 +31,11 @@ body{
     align-items: center;
 }
 
-a:hover {
+.liennav:hover {
     border-top: 1px solid #0065FC ;
 }
 
-a {
+.liennav {
     padding-top: 1em;
     text-decoration: none;
     color:#0065FC;
@@ -165,7 +165,7 @@ h2{
     font-size: 1em;
 }
 
-.cardHebergement > p, h2, .score {
+.cardHebergement > .liencard > p, h2, .score {
     width: max-content;
     margin-left: 0.5em;
     margin-top: 0;
@@ -228,6 +228,10 @@ h2{
     display: flex;
 }
 
+.populaires > .liencard {
+    display: flex;
+}
+
 .conteneur2 {
     background-color:#F2F2F2;
     border-radius: 20px 20px 20px 20px ;
@@ -281,4 +285,13 @@ h2{
 .divfooter{
     margin-right: 10em;
     margin-left: 5em;
+}
+
+.liencard {
+    text-decoration: none;
+    color:black;
+}
+
+.activitesSmall, .activitesTall > .liencard > h2 {
+    font-size: 0.8em !important;
 }
