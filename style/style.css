@@ -36,10 +36,14 @@ p {
 font-size: 90%;
 }
 
-#bouton {
+#boutonPC, #boutonMobile {
     background-color: #0065FC;
     color: white;
     border-radius: 0px 10px 10px 0px;
+}
+
+#boutonMobile{
+    display: none;
 }
 
 #research {
@@ -85,6 +89,7 @@ font-size: 90%;
     background-color: #C5E4FF ;
     border-radius: 17px 17px 17px 17px;
     display: flex;
+    color: lightgray;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
 }
@@ -110,6 +115,11 @@ input {
     padding-right: 0.5em;
 }
 
+#info > .label {
+    color: gray;
+    font-size: 0.75em;
+}
+
 #blockFiltre{
     position: relative;
     
@@ -125,8 +135,11 @@ input {
 .containIconInfo {
     width: 1em;
     height: 1em;
+    font-size: 0.5em;
     background-color: transparent ;
-    border-radius: 17px 17px 17px 17px; 
+    border-radius: 17px 17px 17px 17px;
+    border: solid 1px lightgray;
+    padding : 0.5em; 
     display: flex;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/

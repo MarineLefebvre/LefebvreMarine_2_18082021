@@ -47,13 +47,19 @@ p {
 font-size: 90%;
 }
 
-#bouton {
+#boutonPC, #boutonMobile {
     background-color: #0065FC;
     color: white;
     border-radius: 0px 10px 10px 0px;
-    
 }
 
+#boutonPC {
+    display: none;
+}
+
+#boutonMobile{
+    display: block;
+}
 
 
 #research {
@@ -97,8 +103,11 @@ font-size: 90%;
 .containIcon, .containIconInfo {
     width: 2em;
     height: 2em;
-    background-color: lightgray;
+    font-size: 0.5em;
+    background-color: transparent ;
     border-radius: 20px 20px 20px 20px;
+    border: solid 1px lightgray;
+    padding : 0.5em; 
     display: flex;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
@@ -110,6 +119,12 @@ input {
 
 .label {
     font-weight: bold;
+}
+
+
+#info > .label {
+    color: gray;
+    font-size: 0.75em;
 }
 
 #blockFiltre{
