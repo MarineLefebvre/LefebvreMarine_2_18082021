@@ -213,6 +213,7 @@ h2{
 
 #blocHebergement{
     flex-direction: column-reverse;
+    margin-left: 3em;
 }
 
 .conteneur {
@@ -269,6 +270,7 @@ h2{
 #activites{
     flex-direction: column;
     margin-top: 2em;
+    margin-left: 2em;
 }
 
 .activitesTall, .activitesSmall {
