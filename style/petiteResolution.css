@@ -93,7 +93,7 @@ font-size: 90%;
     width: 100%;
     font-size: 1.5em;
     display: flex;
-    margin-left: none !important;
+    margin-left: 0 !important;
 }
 
 input {
