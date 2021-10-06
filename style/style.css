@@ -1,0 +1,386 @@
+@font-face {
+    font-family: raleway;
+    src: url('../src/Raleway-Regular.ttf');
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4em;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+#inscription{
+    color: #0065FC;
+    margin-top: 1em;
+}
+
+nav {
+    padding: 1rem 0rem;
+    margin: 0rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding-top: 1rem;
+}
+.logo a {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    font-weight: bold;
+}
+nav img {
+    width: 100px;
+}
+
+nav ul {
+    position: absolute;
+    top: 1.9rem;
+    right: 9rem;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 0rem 1rem;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0rem;
+}
+nav .S {
+    font-weight: bold;
+    padding-right: 0rem;
+    padding-top: 1rem;
+}
+nav .menu a {
+    padding-top: 1rem;
+    padding: 1rem 2rem;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+nav .menu a:hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
+
+p {
+}
+
+#boutonPC, #boutonMobile {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#boutonMobile{
+    display: none;
+}
+
+#research {
+    border : 1px solid lightgray;
+    border-radius: 20px 15px 15px 20px;
+    width: max-content;
+    display: flex;
+}
+
+.filtres{
+    display: inline-flex;
+    border : 1px solid lightgray;
+    border-radius: 20px 20px 20px 20px;
+    width: max-content;
+    margin-top: 2em;
+    margin-left: 3em;
+    height: 1.7em;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+}
+
+.filtres:hover{
+    background-color: lightgray; 
+}
+
+.icon, .iconInfo {
+    color: #0065FC;
+    font-size: 1em;
+}
+
+#pin, #graph {
+    color: black;
+}
+
+#graph {
+    
+    margin-left: 8em;
+}
+
+.containIcon {
+    width: 1.7em;
+    height: 1.7em;
+    background-color: #C5E4FF ;
+    border-radius: 17px 17px 17px 17px;
+    display: flex;
+    color: lightgray;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+}
+
+.containresearch{
+
+    width: 1.7em;
+    height: 1.7em;
+    background-color:  #F2F2F2;
+    border-radius: 17px 5px 5px 17px;
+    display: flex;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+}
+
+input {
+    border: 0;
+}
+
+.label {
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#info > .label {
+    color: gray;
+    font-size: 0.75em;
+}
+
+#blockFiltre{
+    position: relative;
+    
+}
+
+#labelFiltres{
+    display: inline-flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.containIconInfo {
+    width: 1em;
+    height: 1em;
+    font-size: 0.5em;
+    background-color: transparent ;
+    border-radius: 17px 17px 17px 17px;
+    border: solid 1px lightgray;
+    padding : 0.5em; 
+    display: flex;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+}
+
+
+#info {
+    display: inline-flex;
+    width: max-content;
+    height: 0.1em;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+    margin-top: 1em; 
+}
+
+h1 {
+    font-size: 1.2em;
+    margin-left: 1em;
+    
+}
+
+.disbaled{
+    color: grey !important;
+}
+
+.cardHebergement{
+    border:white solid 2px;
+    width: max-content;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 2%;
+    margin-bottom: 2em;
+    margin-left: 1%;
+    background-color: white;
+    box-shadow: 6px 6px 5px lightgray;
+}
+
+.imageHebergement {
+    border-radius: 20px 20px 0px 0px;
+    width: 12.5em;
+    height: 8.5em;
+    object-fit: cover;
+}
+
+h2{
+    font-size: 1em;
+}
+
+.cardHebergement > .liencard > p, h2, .score {
+    width: max-content;
+    margin-left: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
+
+.descBestSeller > p, h2 {
+    width: max-content;
+    margin-left: 0.8em;
+    margin-bottom: 0.2em;
+}
+
+.descBestSeller > h2 {
+    width: 5em;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.conteneur, .populaires, .conteneurList {
+    display: flex;
+}
+
+.conteneurList {
+    flex-wrap: wrap;
+}
+
+.populaires > .liencard {
+    display: flex;
+}
+
+#herbegementGlobal {
+    width: 100%;
+    padding: 1em;
+    background-color:#F2F2F2;
+    margin-top: 1em;
+    border-radius: 20px 20px 20px 20px;
+    
+}
+
+.imagePopulaire {
+    width: 8em;
+    height: 9em;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    
+}
+
+
+.descBestSeller{
+    width: max-content;
+}
+
+.populaires{
+    border-radius: 20px 20px 20px 20px;
+    border: white solid 2px;
+    margin-bottom: 2em;
+    background-color: white;
+    width: 20em;
+    align-items: center;
+    box-shadow: 6px 6px 5px lightgray;
+}
+
+.conteneur2 {
+    background-color:#F2F2F2;
+    border-radius: 19px 19px 19px 19px ;
+    margin-left: 1em;
+    padding: 1em;
+    margin-top: 0.7em;
+    
+}
+
+#activites{
+    display: flex;
+    margin-top: 2em;
+    justify-content: space-evenly;
+}
+
+.photoTall {
+    max-width: 100%;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activitesTall, .activitesSmall {
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 2em;
+    background-color: white;
+    width: max-content;
+    box-shadow: 6px 6px 5px #F2F2F2;
+}
+
+
+.photoSmall {
+    width: 100%;
+    height: 6em;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#firstActivite{
+    margin-bottom: 1.5em !important;
+}
+
+.activitesTall{
+    width: 23%;
+}
+
+.activitesSmall {
+    width: 100% !important;
+}
+
+#activitesMarseille {
+    margin-top: 2em;
+    margin-left: 4em;
+}
+
+.footer{
+    background-color:lightgray;
+    display: flex;
+    justify-content: space-around;
+}
+
+.divfooter{
+    font-size: 0.75em;
+}
+
+.liencard {
+    text-decoration: none;
+    color:black;
+}
+
+.activitesSmall > .liencard > h2, .activitesTall > .liencard > h2 {
+    font-size: 0.8em !important;
+    padding-top: 0.4em;
+    word-wrap: break-word;
+}
+
+#page {
+    max-width: 1560px;
+    margin: auto;
+}

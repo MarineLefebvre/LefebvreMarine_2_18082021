@@ -1,0 +1,381 @@
+body{
+    font-family: raleway;
+    font-size: 0.8em;
+    flex-direction: column;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url('../src/Raleway-Regular.ttf');
+}
+
+
+html {
+    font-size: 80%;
+}
+
+.logo {
+    flex: 1;
+    object-fit: cover;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding: 1rem 1rem;
+}
+
+nav ul {
+    position: absolute;
+    top: 6rem;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+li .menu {
+    margin: 0;
+    padding: 0;
+}
+
+li a.h {
+    font-size: 13px;
+    min-width: 187.5px;
+    padding: 1rem 4rem;
+    border-bottom: solid 2px lightgray;
+}
+
+nav .menu a:hover {
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+    border-top: none;
+}
+
+
+
+#heber, #act {
+    align-self: flex-end;
+}
+
+
+p {
+font-size: 90%;
+}
+
+#boutonPC, #boutonMobile {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#boutonPC {
+    display: none;
+}
+
+#boutonMobile{
+    display: block;
+}
+
+
+#research {
+    border : 1px solid lightgray;
+    border-radius: 15px 15px 15px 15px;
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    margin-left: 0 !important;
+}
+
+input {
+   width: 100%;
+   
+}
+
+#parentResearch {
+    display: flex;
+    width: 100%;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+}
+
+.filtres{
+    display: inline-flex;
+    border : 1px solid lightgray;
+    border-radius: 20px 20px 20px 20px;
+    width: max-content;
+    margin-top: 0em;
+    margin-left: 3em;
+    margin-bottom: 1em;
+    height: 2em;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+
+}
+
+.filtres:hover{
+    background-color: lightgray; 
+}
+
+.icon, .iconInfo {
+    color: #0065FC;
+    font-size: 1em;
+}
+
+#pin, #graph {
+    color: black;
+}
+
+#graph {
+    margin-left: 4em;
+}
+
+.containIcon, .containIconInfo {
+    width: 3em;
+    height: 3em;
+    font-size: 0.5em;
+    border-radius: 20px 20px 20px 20px;
+    border: solid 1px lightgray;
+    padding : 0.5em; 
+    display: flex;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+}
+
+.containIcon {
+    background-color: #C5E4FF !important;
+}
+
+.containresearch {
+    width: 2.5em;
+    height: 2em; 
+
+}
+
+input {
+    border: 0;
+}
+
+.label {
+    font-weight: bold;
+}
+
+
+#info > .label {
+    color: gray;
+    font-size: 0.75em;
+}
+
+#blockFiltre{
+    position: relative;
+    flex-direction: column;
+    
+}
+
+#labelFiltres{
+   position: relative !important;
+   display: block;
+}
+
+#info {
+    display: inline-flex;
+    width: max-content;
+    height: 2em;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+    margin-top: 1em; 
+   
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+}
+
+.disbaled{
+    color: grey !important;
+}
+
+.cardHebergement{
+    border:white solid 2px;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 2%;
+    margin-bottom: 2em;
+    margin-left: 0;
+    background-color: white;
+    box-shadow: 6px 6px 5px lightgray;
+}
+
+.imageHebergement {
+    border-radius: 20px 20px 0px 0px;
+    min-width: 100%;
+    height: 8.5em;
+    object-fit: cover;
+}
+
+h2{
+    font-size: 1em;
+}
+
+.cardHebergement > .liencard > p, h2, .score {
+    width: max-content;
+    margin-left: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
+
+.descBestSeller > p, h2 {
+    width: max-content;
+    margin-left: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
+
+.descBestSeller > h2 {
+    width: 10em;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+#blocHebergement{
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.conteneur {
+    display: flex;
+}
+
+.conteneurList {
+    flex-direction: column;
+}
+
+#herbegementGlobal {
+    width: 100%;
+    padding: 0;
+    background-color:white;
+    margin-top: 1em;
+    border-radius: 20px 20px 20px 20px;
+    justify-content: center;
+}
+
+.imagePopulaire {
+    width: 12em;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.descBestSeller{
+    width: max-content;
+}
+
+.populaires{
+    border-radius: 20px 20px 20px 20px;
+    border: white solid 2px;
+    margin-bottom: 2em;
+    background-color: white;
+    width: 98%;
+    align-items: center;
+    box-shadow: 6px 6px 5px lightgray;
+    display: flex;;
+}
+
+
+.populaires > .liencard {
+    display: flex;
+}
+
+.populaires > .liencard > .descBestSeller > .score {
+    margin-top: 3em;
+}
+
+.conteneur2 {
+    justify-content: center;
+    background-color:#F2F2F2;
+    border-radius: 0;
+    /*width: max-content;*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /*padding-left: 4em;*/
+}
+
+#activites{
+    flex-direction: column;
+    margin-top: 2em;
+    /*margin-left: 2em;*/ 
+}
+
+.activitesTall, .activitesSmall {
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 6px 6px 5px #F2F2F2;
+    margin-bottom: 0.75em;
+}
+
+.photoSmall, .photoTall {
+    min-width: 100%;
+    height: 8.5em;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#firstActivite{
+    margin-bottom: 1.5em !important;
+}
+
+.activitesTall, .activitesSmall{
+    margin-left: 0em !important;
+}
+
+#activitesMarseille {
+    margin-left: 0;
+}
+
+.footer{
+    background-color:lightgray;
+    display: flex;
+    flex-direction: column; 
+    font-size: 1.3em;
+}
+
+.divfooter{
+    margin-right: 10em;
+    margin-left: 5em;
+}
+
+.liencard {
+    text-decoration: none;
+    color:black;
+}
+
+.activitesSmall, .activitesTall > .liencard > h2 {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    font-size: 1.2em !important;
+}
+
+#page{
+    max-width: none;
+    margin: 0;
+}
+
+.activitesSmall > .liencard > h2 {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    font-size: 1.2em !important;
+}
