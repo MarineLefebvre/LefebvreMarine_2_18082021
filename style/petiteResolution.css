@@ -5,6 +5,11 @@ body{
     justify-content: center; /*Centrer horizontalement grace a flex box*/
 }
 
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: raleway;
     src: url('../src/Raleway-Regular.ttf');
